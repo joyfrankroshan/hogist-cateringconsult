@@ -1,0 +1,118 @@
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:90px;
+background: #f6f2e9;
+      display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:0 20px;
+z-index: 999;
+}
+.header h5{
+    color:grey
+}
+.headerlogo{
+    display:flex;
+    align-items:center;
+}
+.headerlogo img{
+    width:200px;
+}
+.header button{
+    padding:15px 24px;
+    background: #BC472C;
+    color:white;
+    border:none;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    cursor:pointer;
+    border-radius: 40px;
+    font:15px Lexend,sans-serif
+}
+.header button:hover{
+    background: brown;
+}
+
+.header-right{
+    padding-right: 90px;
+}
+
+@media (max-width:1024px){
+
+.header{
+    padding:0 15px;
+}
+
+.header-right{
+    padding-right:40px;
+}
+
+.header button{
+    padding:12px 14px;
+    font-size:14px;
+}
+
+.headerlogo img{
+    width:45px;
+}
+
+}
+@media (max-width:768px){
+
+.header{
+    height:70px;
+}
+
+.headerlogo img{
+    width:35px;
+}
+
+.headerlogo h1{
+    font-size:18px;
+}
+
+.headerlogo h3{
+    font-size:14px;
+}
+
+.header button{
+    padding:10px 14px;
+    font-size:12px;
+}
+
+.header-right{
+    padding-right:20px;
+}
+
+}
+
+@media (max-width:480px){
+
+.headerlogo h2{
+    font-size:16px;
+}
+.headerlogo{
+    gap:4px
+}
+
+.headerlogo h5{
+    font-size: 10px;
+}
+.header-left{
+    padding-right: 8px;
+}
+
+.header button{
+    padding:8px 8px;
+    font-size:8px;
+}
+
+.headerlogo img{
+    width:20px;
+}
+
+}

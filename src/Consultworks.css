@@ -1,0 +1,116 @@
+.consult-container{
+    width:initial;
+  height: 200%;
+  background:#FAF9F4;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+    
+}
+.consult-left {
+  flex: 0 0 50%;
+padding-top: 50px;
+padding-left: 50px;
+padding-right: 50px;
+padding-bottom: 100px;
+
+}
+.consultimg{
+width:100%;
+    height:105%;
+    border-radius: 20px;;
+}
+
+.consult-right {
+  flex: 0 0 50%;
+  padding-top: 50px;
+padding-left: 50px;
+padding-right: 50px;
+padding-bottom: 100px;
+
+}
+.consulth3 {
+  font-size: 28px;
+  font-family: "Lexend", sans-serif;
+  font-weight: 550;
+  line-height: 1.4;
+  word-spacing: 6px;
+  padding-bottom: 90px;
+}
+.consulth2{
+    font:32px "Lexend", sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+      word-spacing: px;
+      cursor:pointer;
+        transition: 0.3s;
+        color:#B2B0B8
+
+
+}
+.consult-text .active h2 {
+  color: black;
+}
+.consult .active h2 {
+  color: black;
+}
+
+.consultp{
+    font:16px "worksans", sans-serif;
+    color:#989792;
+    padding-bottom: 30px;
+    line-height: 1.2;
+}
+.consulth5{
+    font:20px "Lexend", sans-serif;
+    color:#1F242E;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .consult-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .consulth2{
+        font:20px "Lexend", sans-serif;
+            font-weight: 600;
+}
+.consultp{
+        font:10px "worksans", sans-serif;
+        padding-top: 5px;
+
+
+}
+.consult-text h2:hover {
+  color: black;
+}
+.consult-text .active h2 {
+  color: black;
+}
+.consult-left{
+    
+    padding-bottom: 50px;
+}
+.consulth3{
+    padding-bottom: 50px;
+}
+
+.consulth3{
+    padding-top: 10px;
+}
+.consulth5{
+    padding-top: 50px;
+      font-weight: 500;
+}
+.consult-right{
+  padding-bottom:10px
+}
+
+
+
+
+
+
+}
