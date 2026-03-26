@@ -1,0 +1,91 @@
+.animation-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 500px;   /* ✅ flexible height */
+  padding: 100px 0;    /* ✅ adds vertical space */
+  overflow: hidden;
+  background: #faf7f2;
+}
+
+/* COMMON RIBBON */
+.ribbon {
+  position: absolute;
+  width: 220%;
+  right: 0;
+  padding: 20px 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* TEXT CONTAINER */
+.marquee {
+  display: flex;
+  width: max-content;   /* 🔥 prevents white gap */
+}
+
+/* TEXT */
+.marquee span {
+  white-space: nowrap;
+  font-size: 100px;
+  font-family: "Lexend",sans-serif;
+  font-weight: 600;
+  color: #fff;
+  margin-right: 40px;
+}
+
+/* GREEN STRIP */
+.ribbon.green {
+  top: 200px;
+  background: #6b7f2b;
+  transform: rotate(6deg);
+}
+
+/* RED STRIP */
+.ribbon.red {
+  top: 200px;
+  background: #a9442a;
+  transform: rotate(-6deg);
+  z-index: 2;
+}
+/* TABLET */
+@media (max-width: 1024px) {
+  .animation-wrapper {
+    min-height: 350px;
+    padding: 80px 0;
+  }
+
+  .marquee span {
+    font-size: 36px;
+  }
+
+  .ribbon {
+    padding: 20px 0;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .animation-wrapper {
+    min-height: 280px;
+    padding-top: 10px;
+  }
+
+  .marquee span {
+    font-size: 24px;
+  }
+
+  .ribbon {
+    padding: 15px 0;
+    width: 260%; /* ✅ prevent gaps on small screens */
+  }
+
+  .ribbon.green {
+    transform: rotate(8deg);  /* slightly more tilt looks better */
+  }
+
+  .ribbon.red {
+    transform: rotate(-8deg);
+  }
+}

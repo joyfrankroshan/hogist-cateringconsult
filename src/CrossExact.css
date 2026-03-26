@@ -1,0 +1,54 @@
+.cross-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: #f5f3ee;
+  overflow: hidden;
+}
+
+/* COMMON BAND */
+.band {
+  position: absolute;
+  width: 180%;
+  left: -40%;
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* GREEN (TOP) */
+.green {
+  background: #5f7423;
+  color: white;
+  transform: rotate(-6deg);
+  top: 110px;
+  z-index: 1;
+}
+
+/* RED (BOTTOM crossing) */
+.red {
+  background: #9c3b22;
+  color: white;
+  transform: rotate(6deg);
+  top: 110px;
+  z-index: 2; /* above */
+}
+
+/* TEXT */
+.text {
+  white-space: nowrap;
+  font-size: 42px;
+  font-weight: 600;
+  animation: scroll 10s linear infinite;
+}
+
+/* ANIMATION */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

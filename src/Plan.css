@@ -1,0 +1,396 @@
+.plan-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #f6f2e9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.plan-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.premium{
+  display: inline-flex;
+  align-items: center;
+  font-family: "Lexend", sans-serif;
+  background: orange;
+  width:100px;
+  border-radius: 30px;
+  padding:0px 5px;
+
+}
+
+.gift-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2e7d32;        
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+}
+
+.gift-box i{
+  font-size: 18px;
+}
+.plan-top h6 {
+  font-size: 14px;
+  font-family: "Lexend", sans-serif;
+  color: #1f242e;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.plan-top h1 {
+  font-size: 45px;
+  font-family: "Lexend", sans-serif;
+  color: #1f242e;
+  font-weight: 600;
+  padding:0px 400px;
+  line-height: 1.5;
+  padding-bottom: 50px;
+}
+.plan-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;   
+  gap: 40px;                 
+  flex-wrap: wrap;          
+}
+
+.plan-box1,
+.plan-box2,
+.plan-box3 {
+  width: 350px;
+}
+
+
+
+
+.tier1{
+    font-size: 14px;
+    font-family: "WorkSans",sans-serif;
+  color: #6b6f76;
+}
+
+.plan-box1 {
+  display: flex;
+  flex-direction: column;   
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.plan-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Lexend", sans-serif;
+}
+
+
+
+.consult1 {
+  font-size: 25px;
+  font-family: "Lexend",sans-serif;
+  font-weight: 500;
+}
+
+.amount1 {
+  font-size: 25px;
+    font-family: "Lexend",sans-serif;
+    font-weight: 550;
+    padding-bottom: 10px;
+}
+.duration{
+    font:8px;
+    color:#b2b0a8;
+    font-weight: 100;
+}
+.feature-item {
+  display: flex;         
+  align-items: center;    
+  gap: 10px;
+}             
+
+.feature-item i {
+  font-size: 18px;
+  color:#a3472d;
+  line-height: 1;         
+}
+.feature-item2 {
+  display: flex;         
+  align-items: center;    
+  gap: 10px;              
+}
+.feature-item2 i {
+  font-size: 18px;
+  color:black;
+  line-height: 1;         
+}
+
+.feature-item p {
+  margin: 0;              
+  font-size: 16px;
+  line-height: 1.4;
+}
+.img-wrapper,
+.img-wrapper3 {
+  width: 300px;
+  height: 250px;   
+  border-radius: 20px;
+  overflow: hidden;
+}
+.plan1-img,
+.plan2-img,
+.plan3-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transform: scale(1);
+  transition: transform 0.6s ease;
+}
+.img-wrapper:hover img,
+.img-wrapper2:hover img,
+.img-wrapper3:hover img {
+  transform: scale(1.12);
+}
+
+
+.img-wrapper2 {
+width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;}
+
+
+
+
+
+
+
+.plan-box2 {
+  display: flex;
+  flex-direction: column;   
+  gap: 20px;
+  align-items: flex-start;
+  padding-left: 50px;
+}
+
+.plan-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Lexend", sans-serif;
+}
+
+.tier2 {
+  font-size: 14px;
+      font-family: "WorkSans",sans-serif;
+
+  color: white;
+}
+
+.consult2 {
+  font-size: 25px;
+  font-family: "Lexend",sans-serif;
+  font-weight: 500;
+}
+
+.amount2 {
+  font-size: 25px;
+    font-family: "Lexend",sans-serif;
+    font-weight: 550;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+.tier3{
+    font-size: 14px;
+    font-family: "WorkSans",sans-serif;
+    color:#1f242e;
+}
+
+.plan-box3 {
+  display: flex;
+  flex-direction: column;   
+  gap: 20px;
+  align-items: flex-start;
+  padding-left: 50px;
+
+}
+
+.plan-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Lexend", sans-serif;
+}
+
+.tier3 {
+  font-size: 14px;
+  color: #6b6f76;
+}
+
+.consult3 {
+  font-size: 25px;
+  font-family: "Lexend",sans-serif;
+  font-weight: 500;
+}
+
+.amount3 {
+  font-size: 25px;
+    font-family: "Lexend",sans-serif;
+    font-weight: 550;
+    padding-bottom: 10px;
+}
+.plan-box1,
+.plan-box3 {
+  background: #ffffff;        /* 🔥 white background */
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+.plan-box2 {
+  background: #a3472d;   /* 🔥 brown color */
+  padding: 20px;
+  color: white;          /* make text visible */
+}
+p{
+    line-height: 1.5;
+}
+.plan-box3-button,
+.plan-box1-button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding:20px 40px;
+    background: #a3472d;
+    border: none;
+    padding-left: 20px;
+    color:white;
+    font-size: 20px;
+    font-family: "Lexend", sans-serif;
+    cursor: pointer;
+}
+.plan-box3-button:hover,
+.plan-box1-button:hover {
+  background: #000;
+}
+.plan-box2-button{
+     justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding:20px 40px;
+    background: black;
+    border: none;
+    padding-left: 20px;
+    color:white;
+    font-size: 20px;
+    font-family: "Lexend", sans-serif;
+
+}
+.plan-box2-button:hover{
+    background: white;
+    color:black;
+}
+.plan-button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;  /* keep natural flow */
+  margin-left: 50px;            /* 🔥 moves whole button right */
+}
+.plan-svg {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;   /* 🔥 pushes to right */
+  padding: 0px 40px; 
+    padding-top: 5px;          /* optional spacing */
+         /* optional spacing */
+}
+.plansvg {
+  width: 250px;
+  height: auto;
+}
+
+
+@media (max-width: 768px) {
+  
+  /* STACK CARDS */
+  .plan-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  /* FULL WIDTH CARDS */
+  .plan-box1,
+  .plan-box2,
+  .plan-box3 {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  /* FIX HEADING */
+  .plan-top h1 {
+    padding: 0 50px;
+    font-size: 28px;
+  }
+
+  /* IMAGE FULL WIDTH */
+  .img-wrapper,
+  .img-wrapper2,
+  .img-wrapper3 {
+    width: 100%;
+    height: auto;
+  }
+  .img-wrapper3 {
+    width: 100%;
+    height: 250px;   /* 🔥 keep fixed height */
+  }
+
+  /* BUTTON CENTER */
+  .plan-button {
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+
+  .plan-top h1 {
+    font-size: 24px;
+  }
+
+  .consult1,
+  .consult2,
+  .consult3 {
+    font-size: 20px;
+  }
+
+  .amount1,
+  .amount2,
+  .amount3 {
+    font-size: 20px;
+  }
+
+  .feature-item p,
+  .feature-item2 p {
+    font-size: 14px;
+  }
+
+  .plan-box1-button,
+  .plan-box2-button,
+  .plan-box3-button {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+}

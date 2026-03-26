@@ -1,0 +1,251 @@
+.card{
+    width:100%;
+    height:130vh;
+    background:#f6f2e9;
+    display:flex;
+    flex-direction:column;   /* 🔥 THIS FIXES EVERYTHING */
+    align-items:center;      /* center horizontally */
+    justify-content:flex-start;
+    padding-top:60px;
+}
+.card-text{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    
+    gap:10px;
+}
+
+/* small text */
+.card-small{
+    font-size:14px;
+    font-family:"Lexend", sans-serif;
+    color:#1F242E;
+    line-height: 1.9;
+}
+
+/* heading */
+.card-heading{
+    font-size:36px;
+    font-family:"Lexend", sans-serif;
+    font-weight:550;
+    line-height: 1.5;
+    color:#1F242E;
+    max-width:600px;   /* 🔥 keeps text nicely centered */
+}
+/* outer background */
+
+
+/* main white box */
+.card-cards{
+    display:flex;              /* 🔥 row layout */
+    justify-content:center;    /* center horizontally */
+    gap:30px;                  /* space between cards */
+    margin-top:40px;
+    flex-wrap:wrap;            /* 🔥 responsive (wrap on small screens) */
+}
+.card-container{
+    position: relative;
+    background:#FAF9F4;
+    padding:40px 30px;
+    border-radius:20px;
+    width:350px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+.card-svg{
+    position: relative;   /* parent reference */
+    width: 100%;
+}
+.cardsvg{
+    position: absolute;   /* 👈 REQUIRED */
+    top: -100px;           /* 👈 move UP */
+    left: 0;              /* 👈 start from LEFT */
+    width: 35%;         /* adjust size */
+}
+
+/* title */
+.card-title{
+font-size:20px;
+font-family:"Lexend", sans-serif;
+line-height: 1.5;
+    font-weight:550;
+    color:#1F242E;
+}
+
+/* subtitle */
+.card-subtitle{
+    color:#8c8c8c;
+    margin-top:5px;
+    line-height: 1.8;
+font: 14px "Work Sans", sans-serif;
+    margin-bottom:20px;
+}
+
+/* image */
+.card-image-wrapper img{
+    width:80%;
+    border-radius:8px;
+}
+
+/* bottom link */
+.card-link{
+    margin-top:20px;
+font: 16px "Lexend", sans-serif;
+    font-weight:500;
+    color:#2b2f38;
+    cursor:pointer;
+}
+.card-button {
+    background: #A44027;
+    color: #FAF9F4;
+    font-family: "Lexend", sans-serif;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 16px 36px;
+    border: none;
+    cursor: pointer;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.card-button:hover{
+    background: brown;
+
+}
+
+.button {
+    margin-top: 70px;
+}
+@media (max-width: 767px){
+
+    /* card section */
+  
+    .cardsvg{
+        top: -30px;     /* reduce upward shift */
+        left: 1px;     /* small spacing */
+        width: 170px;   /* smaller size */
+        opacity: 0.7;
+    
+}
+    .card{
+        height:auto;              /* 🔥 avoid overflow */
+        padding:40px 20px;
+    }
+
+    /* heading smaller */
+    .card-heading{
+        font-size:24px;
+        max-width:100%;
+    }
+
+    .card-small{
+        font-size:12px;
+    }
+
+    /* stack cards vertically */
+    .card-cards{
+        flex-direction:column;   /* 🔥 stack */
+        align-items:center;
+        gap:20px;
+    }
+
+    /* card width full */
+    .card-container{
+        width:100%;              /* 🔥 full width */
+        max-width:350px;
+        padding:25px 20px;
+    }
+
+    /* image full width */
+    .card-image-wrapper img{
+        width:100%;
+    }
+
+    /* text adjustments */
+    .card-title{
+        font-size:18px;
+    }
+
+    .card-subtitle{
+        font-size:13px;
+    }
+
+    .card-link{
+        font-size:14px;
+    }
+}
+@media (max-width:1024px){
+
+    .card{
+        height:auto;
+        padding:50px 20px;
+    }
+
+    .card-heading{
+        font-size:28px;
+        max-width:500px;
+    }
+
+    /* 🔥 KEEP 3 CARDS IN ROW */
+    .card-cards{
+        display:flex;
+        justify-content:center;
+        gap:20px;
+        flex-wrap:nowrap;   /* 🔥 prevent wrapping */
+    }
+
+    .card-container{
+        width:30%;          /* 🔥 3 cards fit */
+        min-width:250px;    /* prevent too small */
+        padding:25px 15px;
+    }
+
+    .card-image-wrapper img{
+        width:85%;
+    }
+
+    .card-title{
+        font-size:15px;
+    }
+
+    .card-subtitle{
+        font-size:13px;
+    }
+}
+.card-button {
+    background: #A44027;
+    color: #FAF9F4;
+    font-family: "Lexend", sans-serif;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 16px 36px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .card-button {
+        font-size: 14px;
+        padding: 12px 28px;
+    }
+
+    .button {
+        margin-top: 50px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .card-button {
+        font-size: 13px;
+        padding: 10px 22px;
+        width: 100%; /* full width for small screens */
+    }
+
+    .button {
+        margin-top: 30px;
+    }
+}

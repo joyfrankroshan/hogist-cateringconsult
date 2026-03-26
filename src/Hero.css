@@ -1,0 +1,234 @@
+.hero{
+    min-height:110vh;
+    width:100%;
+    background:#f6f2e9;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+.hero-container{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position: relative;
+}
+.hero-text{
+    width:30%;
+    padding-left:60px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+
+    margin-top: 400px; /* 👈 move BOTH down */
+}
+.hero-image-wrapper{
+    width:70%;
+    position:relative;
+    display:flex;
+    justify-content:flex-end;
+    padding-right:50px;
+    height: 85vh; /* 👈 reduce height */
+    
+       /* small space from right edge */
+}
+
+.hero-img{
+    width:100%;
+    border-radius:40px;
+    height: 100%;
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-size:cover;
+
+}
+
+.hero-cta{
+    position:absolute;
+    bottom:40px;
+    display:flex;
+    gap:20px;
+}
+
+.firstcta-btn{
+    background:#6b7d2b;
+    color:white;
+    padding:20px 20px;
+    border:none;
+    border-radius:40px;
+  font: 20px Lexend, sans-serif;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+}
+.secondcta-btn{
+    background:#6b7d2b;
+    color:white;
+    padding:1px 25px;
+    border:none;
+    border-radius:40px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  font: 20px Lexend, sans-serif;
+    cursor:pointer;
+}
+.circle-arrow i{
+  font: 50px "Work Sans", sans-serif;
+    margin-left:8px;
+    cursor: pointer;
+}
+
+
+
+.capsula{
+    position:absolute;
+    top:70px;
+    left:90px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    z-index:5;
+}
+
+.first-capsula{
+    background:#FAF9F4;
+    padding:1px 80px 20px 5px; /* top right bottom left */
+    border-radius:80px;
+    font-size:105.12px;
+    font-family:'Lexend', sans-serif;
+    font-weight:600;
+    color:#1f2630;
+    transform: translateX(-50px);
+     display: inline-block;   /* 👈 THIS FIXES RIGHT SPACE */
+    width: fit-content;  
+}
+.second-capsula{
+     background:#FAF9F4;
+    padding:5px;
+    border-radius:80px;
+    font-size: 105.12px;
+font-family: 'Lexend', sans-serif;
+    font-weight:600;
+    color:#1f2630;
+    transform: translate(100px, -34px);
+    z-index: 8;
+}
+.heroparagraph{
+    font:40px Lexend,sans-serif;
+    color:#1F242E;
+    line-height:1.5;
+    font-weight:550;
+}
+.hero-small{
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: 1px;
+    color: var(--e-global-color-theme_color_title);
+    font-family: 'Lexend', sans-serif;
+}
+ 
+@media (max-width: 768px){
+
+    .hero{
+        min-height: auto;
+        padding: 20px 15px;
+        width:100%;
+    }
+
+    .hero-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* ✅ TEXT FULL WIDTH */
+    .hero-text{
+    width: 100%;
+    order: 1;
+    margin-top: 60px;
+    transform: translateX(-40px);
+    ; /* 👈 RESET THIS */
+}
+
+    /* ✅ CAPSULA ON TOP (IMPORTANT) */
+    .capsula{
+        position: relative; /* remove absolute */
+        display: flex;
+        flex-direction: column;
+align-items: center;
+left:22px;
+   }
+
+    .first-capsula{
+        background: #FAF9F4;
+        padding: 12px 20px;
+        border-radius: 40px;
+        font: 40px Lexend, sans-serif;
+
+       
+        font-weight: 600;
+        width: fit-content;
+         transform: translateX(-90px) /* remove desktop transform */
+    }
+    .second-capsula{
+         background: #FAF9F4;
+        padding: 12px 20px;
+        border-radius: 40px;
+        font: 40px Lexend, sans-serif;
+
+       
+        font-weight: 600;
+        width: fit-content;
+            transform: translate(0px, -20px); /* 👈 correct */
+
+
+    }
+
+    /* ✅ TEXT STYLE */
+    .hero-small{
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    .heroparagraph{
+    font:31px Lexend,sans-serif;
+        line-height: 1.5;
+        font-weight: 550;
+    }
+
+    /* ✅ IMAGE BELOW TEXT */
+    .hero-image-wrapper{
+        width: 100%;
+        height: 50vh;
+        order: 2;
+        padding-right: 0;
+    }
+
+    .hero-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    /* ✅ BUTTON BELOW IMAGE */
+    .hero-cta{
+        margin-top: 15px;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .firstcta-btn{
+        padding: 12px 16px;
+font: 20px Lexend, sans-serif;
+    }
+    .secondcta-btn{
+        padding: 12px 35px;
+font: 20px Lexend, sans-serif;
+    }
+
+}
