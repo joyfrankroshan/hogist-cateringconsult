@@ -17,7 +17,7 @@ function Hero() {
   initial={{ opacity: 0, x: 100 }}
   animate={{ opacity: 1, x: -50 }}   // 👈 final position
 transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}>
-  Cateringss
+  Catering
 </motion.div>
 
           {/* Second Capsule - from left */}
