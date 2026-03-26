@@ -48,6 +48,7 @@
   background: #a9442a;
   transform: rotate(-6deg);
   z-index: 2;
+  
 }
 /* TABLET */
 @media (max-width: 1024px) {

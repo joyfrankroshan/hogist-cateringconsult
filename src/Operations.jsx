@@ -1,68 +1,103 @@
 import React from 'react'
+import { motion } from "framer-motion";
 import operations from './assets/operations.jpg';
 import operationssvg from "./assets/os.jpg";
 import "./Operations.css"
 
 function Operations() {
+
+  const fadeUp = {
+    initial: { opacity: 0, y: 80 },
+    whileInView: { opacity: 1, y: 0 },
+    viewport: { once: true, amount: 0.3 }
+  };
+
   return (
     <div className='operations'>
 
-      {/* LEFT TEXT + BOXES */}
+      {/* LEFT TEXT */}
       <div className='operations-text'>
 
-        <div className="stars">
-          <i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i><i className="bi bi-star-fill"></i>
-        </div>
+        {/* STARS */}
+        <motion.div
+          className="stars"
+          {...fadeUp}
+          transition={{ duration: 0.5 }}
+        >
+          <i className="bi bi-star-fill"></i>
+          <i className="bi bi-star-fill"></i>
+          <i className="bi bi-star-fill"></i>
+          <i className="bi bi-star-fill"></i>
+          <i className="bi bi-star-fill"></i>
+        </motion.div>
 
-        <p>Why HOGIST</p>
+        {/* SMALL TEXT */}
+        <motion.p
+          {...fadeUp}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          Why HOGIST
+        </motion.p>
 
-        <h3>
+        {/* HEADING */}
+        <motion.h3
+          {...fadeUp}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
           Not Theory.<br/>
           Real Operations.
-        </h3>
+        </motion.h3>
 
-        <p>
+        {/* PARAGRAPH */}
+        <motion.p
+          {...fadeUp}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
           We built this consultancy from 6 years of running actual catering operations — not a classroom.
-        </p>
+        </motion.p>
 
         {/* BOXES */}
         <div className="operations-box">
 
-          <div className="box">
-            <span className="tick">✔</span>
-            <div>
-              <h5>Data-Backed Advisory</h5>
-              <p>Our recommendations come from real order, cost, and complaint data.</p>
-            </div>
-          </div>
-
-          <div className="box">
-            <span className="tick">✔</span>
-            <div>
-              <h5>Fortnightly Accountability</h5>
-              <p>We stay with you — auditing and correcting every two weeks.</p>
-            </div>
-          </div>
-
-          <div className="box">
-            <span className="tick">✔</span>
-            <div>
-              <h5>250+ Vendor Network</h5>
-              <p>We know the best suppliers across Tamil Nadu.</p>
-            </div>
-          </div>
-
-          <div className="box">
-            <span className="tick">✔</span>
-            <div>
-              <h5>Corporate + Caterer Expertise</h5>
-              <p>We ensure smooth execution and cost efficiency.</p>
-            </div>
-          </div>
+          {[
+            {
+              title: "Data-Backed Advisory",
+              desc: "Our recommendations come from real order, cost, and complaint data."
+            },
+            {
+              title: "Fortnightly Accountability",
+              desc: "We stay with you — auditing and correcting every two weeks."
+            },
+            {
+              title: "250+ Vendor Network",
+              desc: "We know the best suppliers across Tamil Nadu."
+            },
+            {
+              title: "Corporate + Caterer Expertise",
+              desc: "We ensure smooth execution and cost efficiency."
+            }
+          ].map((item, index) => (
+            <motion.div
+              className="box"
+              key={index}
+              {...fadeUp}
+              transition={{
+                duration: 0.5,
+                delay: 0.5 + index * 0.2,
+                ease: "easeOut"
+              }}
+            >
+              <span className="tick">✔</span>
+              <div>
+                <h5>{item.title}</h5>
+                <p>{item.desc}</p>
+              </div>
+            </motion.div>
+          ))}
 
         </div>
 
-        {/* ✅ SVG BELOW BOXES */}
+        {/* SVG (NO ANIMATION) */}
         <div className="operations-svg">
           <img src={operationssvg} alt="svg" />
         </div>
@@ -70,11 +105,15 @@ function Operations() {
       </div>
 
       {/* RIGHT IMAGE */}
-      <div className='operations-img'>
+      <motion.div
+        className='operations-img'
+        {...fadeUp}
+        transition={{ duration: 0.7, delay: 0.3 }}
+      >
         <div className='operations--img'>
           <img src={operations} alt="operations-img" />
         </div>
-      </div>
+      </motion.div>
 
     </div>
   )

@@ -121,9 +121,9 @@ color: #777;
     flex-direction: column;
   }
   .comprehensivesvg{
-    width:50%;
-    top:20px;
-    right:70px;
+    width:35%;
+    top:0px;
+    right:10px;
 
   }
   .item h5{
