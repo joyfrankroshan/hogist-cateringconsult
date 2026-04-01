@@ -1,11 +1,10 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import "./Card.css";
-import card1 from "./assets/card1.jpg"
-import card2 from "./assets/card2.jpg"
-import card3 from "./assets/card3.jpg"
-import cardsvg from "./assets/cardsvg.jpg"
-
+import card1 from "../../assets/card1.jpg";
+import card2 from "../../assets/card2.jpg";
+import card3 from "../../assets/card3.jpg";
+import cardsvg from "../../assets/cardsvg.jpg";
 function Card() {
   return (
     <div className='card'>

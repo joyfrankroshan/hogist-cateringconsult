@@ -1,5 +1,5 @@
 .hero{
-    min-height:110vh;
+    min-height:100vh;
     width:100%;
     background:#f6f2e9;
     display:flex;
@@ -13,6 +13,8 @@
     align-items:center;
     justify-content:space-between;
     position: relative;
+
+  transform: translateY(60px); /* move up */
 }
 .hero-text{
     width:30%;
@@ -27,37 +29,43 @@
     width:70%;
     position:relative;
     display:flex;
+    flex-direction: column;
     justify-content:flex-end;
     padding-right:50px;
-    height: 85vh; /* 👈 reduce height */
+    height: 90vh; /* 👈 reduce height */
     
        /* small space from right edge */
 }
 
 .hero-img{
-    width:100%;
+    width:96%;
     border-radius:40px;
-    height: 100%;
+    height: 95%;
     background-position:top center;
     background-repeat:no-repeat;
     background-size:cover;
+     position: relative;
+     left:-15px;
+       min-height: 400px;   /* 👈 prevents shrink */
+
 
 }
 
 .hero-cta{
     position:absolute;
-    bottom:40px;
-    right:100px;
+    bottom:80px;
+    right:110px;
     display:flex;
     gap:20px;
+    
 }
 
 .firstcta-btn{
     background:#6b7d2b;
     color:white;
-    padding:20px 20px;
+    padding:0px 30px;
     border:none;
-    border-radius:40px;
+    border-radius:100px;
   font: 20px Lexend, sans-serif;
     display:flex;
     align-items:center;
@@ -67,19 +75,29 @@
 .secondcta-btn{
     background:#6b7d2b;
     color:white;
-    padding:1px 25px;
+    padding:0px 40px;
     border:none;
-    border-radius:40px;
+    border-radius:100px;
     display:flex;
     align-items:center;
     gap:10px;
   font: 20px Lexend, sans-serif;
     cursor:pointer;
 }
-.circle-arrow i{
-  font: 50px "Work Sans", sans-serif;
-    margin-left:8px;
+.circle-arrow {
+  font-size: 70px ;
     cursor: pointer;
+    transition: transform 0.3s;
+  transform: scaleX(0.8);
+
+  position: relative;
+  top: 10px; /* 👈 moves down */ /* squeeze horizontally */
+
+
+
+}
+.circle-arrow:hover {
+  transform: rotate(45deg) scaleX(0.8);
 }
 
 
@@ -96,7 +114,7 @@
 
 .first-capsula{
     background:#FAF9F4;
-    padding:1px 80px 20px 5px; /* top right bottom left */
+    padding:15px 85px 25px 30px; /* top right bottom left */
     border-radius:80px;
     font-size:105.12px;
     font-family:'Lexend', sans-serif;
@@ -107,16 +125,17 @@
 }
 .second-capsula{
      background:#FAF9F4;
-    padding:5px;
+    padding:15px 85px 25px 30px; /* top right bottom left */
     border-radius:80px;
     font-size: 105.12px;
 font-family: 'Lexend', sans-serif;
     font-weight:600;
     color:#1f2630;
     z-index: 8;
+
 }
 .heroparagraph{
-    font:40px Lexend,sans-serif;
+    font:35px Lexend,sans-serif;
     color:#1F242E;
     line-height:1.5;
     font-weight:550;
@@ -158,30 +177,28 @@ font-family: 'Lexend', sans-serif;
         display: flex;
         flex-direction: column;
 align-items: center;
-left:22px;
+left:-10px;
    }
 
     .first-capsula{
         background: #FAF9F4;
         padding: 12px 20px;
         border-radius: 40px;
-        font: 40px Lexend, sans-serif;
+        font: 35px Lexend, sans-serif;
 
        
         font-weight: 600;
         width: fit-content;
-         transform: translateX(-90px) /* remove desktop transform */
     }
     .second-capsula{
          background: #FAF9F4;
         padding: 12px 20px;
         border-radius: 40px;
-        font: 40px Lexend, sans-serif;
+        font: 35px Lexend, sans-serif;
 
        
         font-weight: 600;
         width: fit-content;
-            transform: translate(0px, -20px); /* 👈 correct */
 
 
     }
@@ -193,9 +210,10 @@ left:22px;
     }
 
     .heroparagraph{
-    font:31px Lexend,sans-serif;
+    font:30px Lexend,sans-serif;
         line-height: 1.5;
-        font-weight: 550;
+        font-weight: 500;
+        padding-bottom: 220px;
     }
 
     /* ✅ IMAGE BELOW TEXT */
@@ -215,19 +233,25 @@ left:22px;
 
     /* ✅ BUTTON BELOW IMAGE */
     .hero-cta{
-        margin-top: 15px;
+        position: relative;   /* 👈 IMPORTANT FIX */
+        width: 100%;
+        align-items: flex-end; /* move to right */
+        display: flex;
         flex-direction: column;
         gap: 10px;
-        align-items: flex-start;
+        top:-270px;
+    right:30px;
     }
 
+
     .firstcta-btn{
-        padding: 12px 16px;
+        padding: 0px 16px;
 font: 20px Lexend, sans-serif;
     }
     .secondcta-btn{
-        padding: 12px 35px;
+        padding: 0px 35px;
 font: 20px Lexend, sans-serif;
     }
+    
 
 }

@@ -19,7 +19,7 @@
 
 /* small text */
 .card-small{
-    font-size:14px;
+    font-size:16px;
     font-family:"Lexend", sans-serif;
     color:#1F242E;
     line-height: 1.9;
@@ -27,10 +27,10 @@
 
 /* heading */
 .card-heading{
-    font-size:36px;
+    font-size:40px;
     font-family:"Lexend", sans-serif;
     font-weight:550;
-    line-height: 1.5;
+    line-height: 1.3;
     color:#1F242E;
     max-width:600px;   /* 🔥 keeps text nicely centered */
 }
@@ -48,7 +48,7 @@
 .card-container{
     position: relative;
     background:#FAF9F4;
-    padding:40px 30px;
+    padding:30px 10px;
     border-radius:20px;
     width:350px;
     text-align:center;
@@ -60,7 +60,7 @@
 }
 .cardsvg{
     position: absolute;   /* 👈 REQUIRED */
-    top: -100px;           /* 👈 move UP */
+    top: -126px;           /* 👈 move UP */
     left: 0;              /* 👈 start from LEFT */
     width: 35%;         /* adjust size */
 }
@@ -69,8 +69,8 @@
 .card-title{
 font-size:20px;
 font-family:"Lexend", sans-serif;
-line-height: 1.5;
-    font-weight:550;
+line-height: 1.3;
+    font-weight:500;
     color:#1F242E;
 }
 
@@ -79,21 +79,24 @@ line-height: 1.5;
     color:#8c8c8c;
     margin-top:5px;
     line-height: 1.8;
-font: 14px "Work Sans", sans-serif;
+font: 14px;
+font-family: "Work Sans", sans-serif;
     margin-bottom:20px;
 }
 
 /* image */
 .card-image-wrapper img{
-    width:80%;
+    width:70%;
     border-radius:8px;
 }
 
 /* bottom link */
 .card-link{
     margin-top:20px;
-font: 16px "Lexend", sans-serif;
-    font-weight:500;
+font-size: 16px ;
+font-family:"Lexend", sans-serif;
+
+    font-weight:450;
     color:#2b2f38;
     cursor:pointer;
 }
@@ -154,7 +157,6 @@ font: 16px "Lexend", sans-serif;
     .card-container{
         width:100%;              /* 🔥 full width */
         max-width:350px;
-        padding:25px 20px;
     }
 
     /* image full width */

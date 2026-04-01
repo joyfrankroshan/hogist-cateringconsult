@@ -1,9 +1,13 @@
 import React from 'react'
 import { motion } from "framer-motion";
-import heroimg from "./assets/heroimg.jpg"
+import heroimg from "../../assets/heroimg.jpg";
+import { PiArrowCircleUpRightThin } from "react-icons/pi";
+
 import "./Hero.css";
 
 function Hero() {
+  const isMobilefirst = window.innerWidth <= 768;
+  const isMobilesecond = window.innerWidth <= 768;
   return (
     <div className='hero'>
       <div className='hero-container'>
@@ -12,11 +16,15 @@ function Hero() {
         <div className="capsula">
 
           {/* First Capsule - from right */}
-          <motion.div
+         <motion.div
   className="first-capsula"
   initial={{ opacity: 0, x: 100 }}
-  animate={{ opacity: 1, x: -50 }}   // 👈 final position
-transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}>
+  animate={{
+    opacity: 1,
+    x: isMobilefirst ? -40 : -50   // 👈 responsive fix
+  }}
+  transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
+>
   Catering
 </motion.div>
 
@@ -24,8 +32,13 @@ transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}>
           <motion.div
   className="second-capsula"
   initial={{ opacity: 0, x: -100, y: 0 }}
-  animate={{ opacity: 1, x: 100, y: -34 }}  // 👈 replace transform
-transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}>
+  animate={{ 
+    opacity: 1, 
+    x: isMobilesecond ? 45 : 100,   // 👈 responsive X
+    y: isMobilesecond ? -25 : -34   // 👈 responsive Y
+  }}
+  transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
+>
   Consultancy
 </motion.div>
 
@@ -43,7 +56,7 @@ transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}>
           </div>
 
           <div className='heroparagraph'>
-            HOGIST Consult helps corporates, caterers optimize food operations
+            Hogist Consult helps corporates, caterers optimize food operations
           </div>
         </motion.div>
 
@@ -67,16 +80,16 @@ transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}>
 
           >
             <button className="firstcta-btn">
-              <span className="circle-arrow">
-                <i className="bi bi-arrow-up-right-circle"></i>
-              </span>
+             <span className="circle-arrow">
+  <PiArrowCircleUpRightThin />
+</span>
               Book a Free <br /> Consultation
             </button>
 
             <button className="secondcta-btn">
-              <span className="circle-arrow">
-                <i className="bi bi-arrow-up-right-circle"></i>
-              </span>
+             <span className="circle-arrow">
+  <PiArrowCircleUpRightThin />
+</span>
               Explore<br/> Services
             </button>
           </motion.div>

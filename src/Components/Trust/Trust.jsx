@@ -19,7 +19,7 @@ function Trust() {
         {...fadeUp}
         transition={{ duration: 0.6 }}
       >
-        <h2>Trusted expertise across corporate food operations</h2>
+        <h2>Trusted expertise across<br/> corporate food operations</h2>
       </motion.div>
 
       {/* RIGHT STATS */}

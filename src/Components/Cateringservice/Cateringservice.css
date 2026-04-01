@@ -72,16 +72,15 @@ font-family: "Lexend", sans-serif;
 
 
 .whatsapp {
-  background: #a3472d; /* match screenshot brown */
+  background: #a3472d; 
   color: white;
-font-family: "Lexend", sans-serif;
-font-size: 12px;
-  padding: 15px 20px;
+  font-family: "Lexend", sans-serif;
+  font-size: 12px;
+  padding: 0px 10px 0px 10px; /* ✅ correct */
   border: none;
-  border-radius: 25px;
+  border-radius: 100px;
   cursor: pointer;
 }
-
 .email {
   background: transparent;
   color: #a3472d;
@@ -133,6 +132,8 @@ font-size: 12px;
   .email {
     width: 90%;
     text-align: center;
+      padding: 15px 40px 15px 40px; /* ✅ correct */
+
   }
   
 }

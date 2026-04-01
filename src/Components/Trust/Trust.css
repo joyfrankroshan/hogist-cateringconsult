@@ -12,17 +12,19 @@
 
 /* LEFT TEXT */
 .trust-text h2 {
-  font-size: 19px;
+  font-size: 23px;
   color: #1f242e;
   line-height: 1.5;
   font-family: "Lexend", sans-serif;
-  font-weight: 550;
+  font-weight: 450;
 }
 
 /* RIGHT SIDE STATS */
 .trust-stats {
   display: flex;
-  gap: 60px;
+  gap:100px;
+
+  
 }
 
 /* EACH BLOCK */

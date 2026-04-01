@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { motion } from "framer-motion";
-import consultworks1 from "./assets/Consultworks1.jpg";
-import consultworks2 from "./assets/Consultworks2.jpg";
-import consultworks3 from "./assets/Consultworks3.jpg";
+import consultworks1 from "../../assets/Consultworks1.jpg";
+import consultworks2 from "../../assets/Consultworks2.jpg";
+import consultworks3 from "../../assets/Consultworks3.jpg";
 import "./Consultworks.css";
 
 function Consultworks() {

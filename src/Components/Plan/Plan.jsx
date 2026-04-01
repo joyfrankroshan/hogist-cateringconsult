@@ -1,9 +1,9 @@
 import React from 'react'
 import { motion } from "framer-motion";
-import plan1 from "./assets/plan1.jpg";
-import plan2 from "./assets/plan2.jpg";
-import plan3 from "./assets/qw.jpg";
-import plansvg from "./assets/plansvg.jpg";
+import plan1 from "../../assets/plan1.jpg";
+import plan2 from "../../assets/plan2.jpg";
+import plan3 from "../../assets/qw.jpg";
+import plansvg from "../../assets/plansvg.jpg";
 import "./Plan.css";
 
 function Plan() {

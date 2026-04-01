@@ -1,16 +1,16 @@
-import Header from "./Header";
-import Hero from "./Hero";
-import Card from "./Card";
-import Consultworks from "./Consultworks";
-import Animation from "./Animation";
-import Comprehensive from "./Comprehensive";
-import Trust from "./Trust";
-import Cateringservice from "./Cateringservice";
-import Operations from "./Operations";
-import Plan from "./Plan";
-import Orangebar from "./Orangebar";
+import Header from "./Components/Header/Header";
+import Hero from "./Components/Hero/Hero";
+import Card from "./Components/Card/Card";
+import Consultworks from "./Components/Consultworks/Consultworks";
+import Animation from "./Animation/Animation";
+import Comprehensive from "./Components/Comprehensive/Comprehensive";
+import Trust from "./Components/Trust/Trust";
+import Cateringservice from "./Components/Cateringservice/Cateringservice";
+import Operations from "./Components/Operations/Operations";
+import Plan from "./Components/Plan/Plan";
+import Orangebar from "./Components/Orangebar/Orangebar";
 
-import Footer from "./Footer";
+import Footer from "./Components/Footer/Footer";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {

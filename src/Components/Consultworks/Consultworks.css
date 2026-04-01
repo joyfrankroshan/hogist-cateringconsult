@@ -38,7 +38,7 @@ padding-bottom: 100px;
   padding-bottom: 90px;
 }
 .consulth2{
-    font:32px "Lexend", sans-serif;
+    font:36px "Lexend", sans-serif;
     font-weight: 600;
     line-height: 1.5;
       word-spacing: px;
@@ -68,6 +68,8 @@ padding-bottom: 100px;
     padding-bottom: 10px;
     font-weight: 500;
 }
+
+
 @media screen and (max-width: 768px) {
   .consult-container {
     display: flex;

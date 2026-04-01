@@ -1,15 +1,15 @@
 import React from 'react'
 import { motion } from "framer-motion";
 
-import stafftraining from "./assets/stafftraining.jpg"
-import sku from "./assets/sku.jpg"
-import kitchendesign from "./assets/kitchendesign.jpg";
-import menuplanning from "./assets/menuplanning.jpg";
-import foodsafety from "./assets/foodsafety.jpg";
-import equipment from "./assets/equipment.jpg";
-import customer from "./assets/customer.jpg";
-import costcontrol from "./assets/costcontrol.jpg";
-import comprehensivesvg from "./assets/comprehensivesvg.png";
+import stafftraining from "../../assets/stafftraining.jpg";
+import sku from "../../assets/sku.jpg";
+import kitchendesign from "../../assets/kitchendesign.jpg";
+import menuplanning from "../../assets/menuplanning.jpg";
+import foodsafety from "../../assets/foodsafety.jpg";
+import equipment from "../../assets/equipment.jpg";
+import customer from "../../assets/customer.jpg";
+import costcontrol from "../../assets/costcontrol.jpg";
+import comprehensivesvg from "../../assets/comprehensivesvg.png";
 
 import "./Comprehensive.css";
 
@@ -38,7 +38,7 @@ function Comprehensive() {
             <p className='comprehensive-para'>What We Do</p>
 
             <h1 className='comprehensiveh1'>
-              8 Comprehensive Services Crafted From <span>Extensive Real-World Operational Expertise</span> and Proven Practices.
+              8 Comprehensive Services Crafted From <span>Extensive Real-World Operational</span> Expertise and Proven Practices.
             </h1>
           </div>
 
@@ -57,10 +57,12 @@ function Comprehensive() {
               <img src={stafftraining} />
               <div>
                 <h5>Staffing & Training</h5>
-                <p>Fortnightly QHSE training</p>
-                <p>Service standards coaching</p>
-                <p>Action plan development</p>
-                <p>Accountability tracking</p>
+                <ul>
+  <li>Fortnightly QHSE training</li>
+  <li>Service standards coaching</li>
+  <li>Action plan development</li>
+  <li>Accountability tracking</li>
+</ul>
               </div>
             </motion.div>
 
@@ -68,10 +70,14 @@ function Comprehensive() {
               <img src={sku} />
               <div>
                 <h5>SKU Management</h5>
-                <p>Inventory tracking</p>
-                <p>Wastage reduction</p>
-                <p>Procurement efficiency</p>
-                <p>Inventory tracking</p>
+                <ul>
+                  <li>Inventory tracking</li>
+                <li>Wastage reduction</li>
+                <li>Procurement efficiency</li>
+                <li>Inventory tracking</li>
+
+                </ul>
+                
               </div>
             </motion.div>
 
@@ -79,10 +85,14 @@ function Comprehensive() {
               <img src={foodsafety} />
               <div>
                 <h5>Food Safety & Hygiene Audujuits</h5>
-                <p>Fortnightly QHSE kitchen audits</p>
-                <p>Post-audit action plans</p>
-                <p>Compliance monitoring</p>
-                <p>FSSAI readiness checks</p>
+                <ul>
+                  <li>Fortnightly QHSE kitchen audits</li>
+                <li>Post-audit action plans</li>
+                <li>Compliance monitoring</li>
+                <li>FSSAI readiness checks</li>
+
+                </ul>
+                
               </div>
             </motion.div>
 
@@ -90,10 +100,13 @@ function Comprehensive() {
               <img src={equipment} />
               <div>
                 <h5>Equipment Suggestion</h5>
-                <p>Existing equipment assessment</p>
-                <p>New equipment recommendation</p>
-                <p>Detailed specifications</p>
-                <p>Budget-aligned sourcing</p>
+                <ul>
+                   <li>Existing equipment assessment</li>
+                <li>New equipment recommendation</li>
+                <li>Detailed specifications</li>
+                <li>Budget-aligned sourcing</li>
+                </ul>
+               
               </div>
             </motion.div>
 
@@ -106,10 +119,14 @@ function Comprehensive() {
               <img src={menuplanning} />
               <div>
                 <h5>Menu Planning</h5>
-                <p>Daily production plans</p>
-                <p>Procurement planning</p>
-                <p>Recipe standardization</p>
-                <p>Client-feedback adjustments</p>
+                <ul>
+                  <li>Daily production plans</li>
+                <li>Procurement planning</li>
+                <li>Recipe standardization</li>
+                <li>Client-feedback adjustments</li>
+
+                </ul>
+                
               </div>
             </motion.div>
 
@@ -117,10 +134,13 @@ function Comprehensive() {
               <img src={kitchendesign} />
               <div>
                 <h5>Kitchen Design</h5>
-                <p>Workflow optimization</p>
-                <p>Existing layout analysis</p>
-                <p>Zone planning</p>
-                <p>Traffic flow redesign</p>
+                <ul>
+                  <li>Workflow optimization</li>
+                <li>Existing layout analysis</li>
+                <li>Zone planning</li>
+                <li>Traffic flow redesign</li>
+                </ul>
+                
               </div>
             </motion.div>
 
@@ -128,10 +148,12 @@ function Comprehensive() {
               <img src={customer} />
               <div>
                 <h5>Customer Care Support</h5>
-                <p>Dedicated WhatsApp channel</p>
-                <p>Daily communication tracking</p>
-                <p>Delivery time monitoring</p>
-                <p>Rapid issue resolution</p>
+                <ul>
+                  <li>Dedicated WhatsApp channel</li>
+                  <li>Daily communication tracking</li>
+                  <li>Delivery time monitoring</li>
+                  <li>Rapid issue resolution</li>
+                </ul>
               </div>
             </motion.div>
 
@@ -139,10 +161,12 @@ function Comprehensive() {
               <img src={costcontrol} />
               <div>
                 <h5>Cost Control & Budgeting</h5>
-                <p>Monthly budget reviews</p>
-                <p>Fortnightly assessments</p>
-                <p>Variance analysis</p>
-                <p>Cost-saving identification</p>
+                <ul>
+                  <li>Monthly budget reviews</li>
+                  <li>Fortnightly assessments</li>
+                  <li>Variance analysis</li>
+                  <li>Cost-saving identification</li>
+                </ul>
               </div>
             </motion.div>
 

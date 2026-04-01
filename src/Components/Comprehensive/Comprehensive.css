@@ -38,7 +38,7 @@
     word-spacing: 3px;
 }
 .comprehensiveh1 span{
-    color:#A44047
+    color:#A44027
 }
 .comprehensive-para{
     color:#989792;
@@ -107,6 +107,25 @@ color: #777;
 }
 .item:nth-last-child(-n+1) {
     border-bottom: none;
+}
+
+.item ul {
+  padding-left: 18px;   /* space for bullets */
+  margin: 0;
+}
+
+.item li {
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  color: #777;
+  margin-top: 5px;
+  word-spacing: 3px;
+  line-height: 1.4;   /* 👈 better readability than 1 */
+}
+
+/* remove bottom border for last item */
+.item:nth-last-child(-n+1) {
+  border-bottom: none;
 }
 @media screen and (max-width: 767px) {
     .comprehensiveh1{

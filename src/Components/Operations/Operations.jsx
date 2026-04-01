@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion";
-import operations from './assets/operations.jpg';
-import operationssvg from "./assets/os.jpg";
+import operations from "../../assets/operations.jpg";
+import operationssvg from "../../assets/os.jpg";
 import "./Operations.css"
 
 function Operations() {

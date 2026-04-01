@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion";
-import CateringserviceImg from "./assets/cateringservice.jpg";
+import CateringserviceImg from "../../assets/cateringservice.jpg";
 import "./Cateringservice.css";
 
 function Cateringservice() {
