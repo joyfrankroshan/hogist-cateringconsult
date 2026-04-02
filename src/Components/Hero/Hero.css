@@ -18,7 +18,8 @@
 }
 .hero-text{
     width:30%;
-    padding-left:60px;
+    padding-left:40px;
+    padding-right:20px;
     display:flex;
     flex-direction:column;
     gap:20px;
@@ -85,19 +86,29 @@
     cursor:pointer;
 }
 .circle-arrow {
-  font-size: 70px ;
-    cursor: pointer;
-    transition: transform 0.3s;
-  transform: scaleX(0.8);
-
+  font-size: 70px;
   position: relative;
-  top: 10px; /* 👈 moves down */ /* squeeze horizontally */
+  top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 
-
-
+  transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
 }
+
+.arrow-inner {
+  display: flex;
+  transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* ✅ ONLY when arrow is hovered */
 .circle-arrow:hover {
-  transform: rotate(45deg) scaleX(0.8);
+  transform: rotate(90deg); /* circle rotates */
+}
+
+.circle-arrow:hover .arrow-inner {
+  transform: rotate(-45deg); /* arrow tilts */
 }
 
 
@@ -116,7 +127,7 @@
     background:#FAF9F4;
     padding:15px 85px 25px 30px; /* top right bottom left */
     border-radius:80px;
-    font-size:105.12px;
+    font-size:100px;
     font-family:'Lexend', sans-serif;
     font-weight:600;
     color:#1f2630;
@@ -127,7 +138,7 @@
      background:#FAF9F4;
     padding:15px 85px 25px 30px; /* top right bottom left */
     border-radius:80px;
-    font-size: 105.12px;
+    font-size: 100px;
 font-family: 'Lexend', sans-serif;
     font-weight:600;
     color:#1f2630;
@@ -139,6 +150,7 @@ font-family: 'Lexend', sans-serif;
     color:#1F242E;
     line-height:1.5;
     font-weight:550;
+    padding-right: 10px;
 }
 .hero-small{
     font-size: 12px;

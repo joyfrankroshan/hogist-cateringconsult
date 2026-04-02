@@ -27,8 +27,8 @@ function Cateringservice() {
         </p>
 
         <div className='cateringservice-buttons'>
-          <button className='whatsapp'>📲 WhatsApp Us Now</button>
-          <button className='email'>✉️ Email Us</button>
+          <button className='whatsapp'> WhatsApp Us Now</button>
+          <button className='email'> Email Us</button>
         </div>
       </motion.div>
 
