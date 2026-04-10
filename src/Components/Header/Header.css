@@ -55,19 +55,14 @@ margin-left: auto;
   cursor: pointer;
   font-size:16px;
   font-family:"Lexend", sans-serif;
+  font-weight: 400;
 }
 
 .menu-item {
   position: relative;
 }
 
-.menu-icon {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  cursor: pointer;
-  font-size: 14px;
-}
+
 .menu-item:first-child .menu-icon {
   color: #a3472d;
 }
@@ -144,7 +139,10 @@ border-radius: 10px;
 
 
 /* MOBILE */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  .header {
+    position:  relative ;
+  }
 
   .header-right {
     display: none;

@@ -14,10 +14,10 @@
     justify-content:space-between;
     position: relative;
 
-  transform: translateY(60px); /* move up */
+  transform: translateY(30px); /* move up */
 }
 .hero-text{
-    width:30%;
+    width:36%;
     padding-left:40px;
     padding-right:20px;
     display:flex;
@@ -27,19 +27,19 @@
     margin-top: 400px; /* 👈 move BOTH down */
 }
 .hero-image-wrapper{
-    width:70%;
+    width:74%;
     position:relative;
     display:flex;
     flex-direction: column;
     justify-content:flex-end;
-    padding-right:50px;
-    height: 90vh; /* 👈 reduce height */
+    height: 90vh; 
+/* 👈 reduce height */
     
        /* small space from right edge */
 }
 
 .hero-img{
-    width:96%;
+    width:95%;
     border-radius:40px;
     height: 95%;
     background-position:top center;
@@ -64,7 +64,7 @@
 .firstcta-btn{
     background:#6b7d2b;
     color:white;
-    padding:0px 30px;
+    padding:0px 30px 10px 30px;
     border:none;
     border-radius:100px;
   font: 20px Lexend, sans-serif;
@@ -76,7 +76,7 @@
 .secondcta-btn{
     background:#6b7d2b;
     color:white;
-    padding:0px 40px;
+    padding:0px 40px 10px 40px;
     border:none;
     border-radius:100px;
     display:flex;
@@ -160,6 +160,21 @@ font-family: 'Lexend', sans-serif;
     color: var(--e-global-color-theme_color_title);
     font-family: 'Lexend', sans-serif;
 }
+@media(max-width: 1024px){
+    .hero-text{
+        width: 45%;
+    }
+    .hero-cta{
+        right:65px;
+    }
+    .hero-img{
+        width: 100%;
+        height:100%;
+    }
+    .circle-arrow{
+        font-size: 50px;
+}
+}
  
 @media (max-width: 768px){
 
@@ -172,6 +187,8 @@ font-family: 'Lexend', sans-serif;
     .hero-container{
         flex-direction: column;
         gap: 20px;
+          transform: translateY(-80px); /* move up */
+
     }
 
     /* ✅ TEXT FULL WIDTH */
@@ -225,43 +242,47 @@ left:-10px;
     font:30px Lexend,sans-serif;
         line-height: 1.5;
         font-weight: 500;
-        padding-bottom: 220px;
     }
 
     /* ✅ IMAGE BELOW TEXT */
     .hero-image-wrapper{
         width: 100%;
-        height: 50vh;
         order: 2;
         padding-right: 0;
+                transform: translateX(10px);
+                    position: relative;
+                    height:55vh;
+
+
+        
     }
 
     .hero-img{
         width: 100%;
-        height: 100%;
+        height: initial;
         object-fit: cover;
         border-radius: 20px;
     }
 
     /* ✅ BUTTON BELOW IMAGE */
     .hero-cta{
-        position: relative;   /* 👈 IMPORTANT FIX */
-        width: 100%;
+ position: absolute;
+    bottom: 20px;  /* 🔥 move up from bottom of image */        width: 100%;
         align-items: flex-end; /* move to right */
         display: flex;
         flex-direction: column;
         gap: 10px;
-        top:-270px;
-    right:30px;
+    /* reset */
+     /* control spacing cleanly */    right:30px;
     }
 
 
     .firstcta-btn{
-        padding: 0px 16px;
+        padding: 10px 18px;
 font: 20px Lexend, sans-serif;
     }
     .secondcta-btn{
-        padding: 0px 35px;
+        padding: 10px 40px;
 font: 20px Lexend, sans-serif;
     }
     
