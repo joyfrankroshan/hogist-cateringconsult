@@ -133,7 +133,7 @@ font-family:"Lexend", sans-serif;
 }
     .card{
         height:auto;              /* 🔥 avoid overflow */
-        padding:40px 20px;
+        
     }
 
     /* heading smaller */
@@ -142,9 +142,7 @@ font-family:"Lexend", sans-serif;
         max-width:100%;
     }
 
-    .card-small{
-        font-size:12px;
-    }
+    
 
     /* stack cards vertically */
     .card-cards{
@@ -181,7 +179,7 @@ font-family:"Lexend", sans-serif;
 
     .card{
         height:auto;
-        padding:50px 20px;
+        padding:0px 20px 50px 20px;
     }
 
     .card-heading{
@@ -204,11 +202,11 @@ font-family:"Lexend", sans-serif;
     }
 
     .card-image-wrapper img{
-        width:85%;
+        width:100%;
     }
 
     .card-title{
-        font-size:15px;
+        font-size:18px;
     }
 
     .card-subtitle{
@@ -244,7 +242,8 @@ font-family:"Lexend", sans-serif;
     .card-button {
         font-size: 13px;
         padding: 10px 22px;
-        width: 100%; /* full width for small screens */
+        width: 100%;
+        margin-bottom:30px; /* full width for small screens */
     }
 
     .button {

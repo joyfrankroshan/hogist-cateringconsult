@@ -88,7 +88,7 @@ function Hero() {
 
             <button className="secondcta-btn">
               <span className="circle-arrow">
-                <span className="arrow-inner">
+                <span className="arrow-inner2">
                   <PiArrowCircleUpRightThin />
                 </span>
               </span>

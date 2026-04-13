@@ -76,7 +76,10 @@
 .secondcta-btn{
     background:#6b7d2b;
     color:white;
-    padding:0px 40px 10px 40px;
+    padding-top:0px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 40px;
     border:none;
     border-radius:100px;
     display:flex;
@@ -98,6 +101,10 @@
 }
 
 .arrow-inner {
+  display: flex;
+  transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.arrow-inner2 {
   display: flex;
   transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -180,8 +187,9 @@ font-family: 'Lexend', sans-serif;
 
     .hero{
         min-height: auto;
-        padding: 20px 15px;
+        padding: 20px 15px 0px 15px;
         width:100%;
+        margin-bottom: -40px;
     }
 
     .hero-container{
@@ -197,6 +205,7 @@ font-family: 'Lexend', sans-serif;
     order: 1;
     margin-top: 60px;
     transform: translateX(-40px);
+    padding:10px;
     ; /* 👈 RESET THIS */
 }
 
@@ -213,7 +222,7 @@ left:-10px;
         background: #FAF9F4;
         padding: 12px 20px;
         border-radius: 40px;
-        font: 35px Lexend, sans-serif;
+        font: 45px Lexend, sans-serif;
 
        
         font-weight: 600;
@@ -223,7 +232,7 @@ left:-10px;
          background: #FAF9F4;
         padding: 12px 20px;
         border-radius: 40px;
-        font: 35px Lexend, sans-serif;
+        font: 45px Lexend, sans-serif;
 
        
         font-weight: 600;
@@ -234,7 +243,7 @@ left:-10px;
 
     /* ✅ TEXT STYLE */
     .hero-small{
-        font-size: 13px;
+        font-size: 13px; 
         margin-top: 10px;
     }
 
@@ -273,17 +282,20 @@ left:-10px;
         flex-direction: column;
         gap: 10px;
     /* reset */
-     /* control spacing cleanly */    right:30px;
+     /* control spacing cleanly */    right:45px;
     }
 
 
     .firstcta-btn{
-        padding: 10px 18px;
+        padding: 20px 25px;
 font: 20px Lexend, sans-serif;
     }
     .secondcta-btn{
-        padding: 10px 40px;
-font: 20px Lexend, sans-serif;
+ padding-top:20px;
+    padding-right: 70px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    font: 20px Lexend, sans-serif;
     }
     
 

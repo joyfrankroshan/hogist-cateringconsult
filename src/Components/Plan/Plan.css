@@ -354,7 +354,7 @@ p{
 
   /* FIX HEADING */
   .plan-top h1 {
-    padding: 0 50px;
+    padding: 10px 10px;
     font-size: 28px;
   }
 
@@ -383,9 +383,7 @@ p{
 }
 @media (max-width: 480px) {
 
-  .plan-top h1 {
-    font-size: 24px;
-  }
+  
 
   .consult1,
   .consult2,

@@ -24,8 +24,8 @@ width:100%;
 .consult-right {
   flex: 0 0 50%;
   padding-top: 50px;
-padding-left: 50px;
-padding-right: 50px;
+padding-left: 20px;
+padding-right: 20px;
 padding-bottom: 100px;
 
 }
@@ -76,11 +76,11 @@ padding-bottom: 100px;
     flex-direction: column;
   }
   .consulth2{
-        font:20px "Lexend", sans-serif;
-            font-weight: 600;
+        font:25px "Lexend", sans-serif;
+            font-weight: 500;
 }
 .consultp{
-        font:10px "worksans", sans-serif;
+        font:15px "worksans", sans-serif;
         padding-top: 5px;
 
 
@@ -103,12 +103,31 @@ padding-bottom: 100px;
     padding-top: 10px;
 }
 .consulth5{
-    padding-top: 50px;
+    padding-top: 24px;
       font-weight: 500;
+      font-size: 25px;
 }
 .consult-right{
   padding-bottom:10px
 }
+.consult-left {
+padding-top: 45px;
+padding-left: 25px;
+padding-right: 25px;
+padding-bottom: 1px;
+
+}
+.consultimg{
+width:100%;
+    height:100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 
 
 

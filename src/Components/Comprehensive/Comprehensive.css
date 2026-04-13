@@ -129,8 +129,9 @@ color: #777;
 }
 @media screen and (max-width: 767px) {
     .comprehensiveh1{
-        font: 25px "Lexend", sans-serif;
+        font: 30px "Lexend", sans-serif;
         font-weight: 550;
+        padding:0px 10px;
 
     }
 .comprehensive-paragraph {
